@@ -1,0 +1,66 @@
+:root {
+  --bg: #0b0d10;
+  --panel: #0f1216;
+  --line: #1c2128;
+  --line-soft: #14181d;
+  --text: #e6e8eb;
+  --muted: #8b949e;
+  --dim: #6e7681;
+  --complete: #3fb68b;
+  --progress: #e0a43a;
+  --blocked: #e5534b;
+  --idle: #3a414b;
+  --topbar-h: max(36px, 4.5vh);
+  --font: Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font-family: var(--font); }
+.num { font-variant-numeric: tabular-nums; }
+a { color: inherit; }
+[hidden] { display: none !important; }
+
+/* Login */
+.login-page { display: grid; place-items: center; }
+.login { width: min(360px, 90vw); display: grid; gap: 10px; }
+.login-brand { margin: 0; color: var(--muted); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; }
+.login h1 { margin: 0 0 18px; font-size: 26px; font-weight: 600; }
+.login label { font-size: 13px; color: var(--muted); }
+.login input {
+  background: var(--panel); color: var(--text); border: 1px solid var(--line);
+  padding: 11px 12px; font: inherit; font-size: 15px; border-radius: 2px;
+}
+.login input:focus { outline: 1px solid var(--muted); }
+.login button {
+  margin-top: 8px; padding: 11px; font: inherit; font-weight: 600; cursor: pointer;
+  background: var(--text); color: var(--bg); border: 0; border-radius: 2px;
+}
+.login-error { margin: 0; color: var(--blocked); font-size: 13px; }
+.login-help { margin: -8px 0 10px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.login-help b { color: var(--text); font-weight: 600; }
+
+/* Top bar (viewing pages) */
+.topbar {
+  height: var(--topbar-h); display: flex; align-items: center; gap: 2vw;
+  padding: 0 1.1vw; border-bottom: 1px solid var(--line); white-space: nowrap;
+  font-size: clamp(11px, 1.45vh, 16px);
+}
+.tb-brand { letter-spacing: .16em; text-transform: uppercase; color: var(--muted); font-size: .92em; }
+.tb-brand b { color: var(--text); font-weight: 600; margin-right: .8em; }
+.tb-nav { display: flex; gap: 1.6vw; margin: 0 auto; }
+.tb-nav a { text-decoration: none; color: var(--dim); padding: .35em 0; border-bottom: 2px solid transparent; }
+.tb-nav a:hover { color: var(--text); }
+.tb-nav a.on { color: var(--text); border-bottom-color: var(--text); }
+.tb-right { display: flex; align-items: center; gap: 1.1vw; }
+.tb-hide { color: var(--dim); font-size: .85em; display: flex; align-items: center; gap: .4em; cursor: pointer; user-select: none; }
+.tb-hide input { accent-color: var(--muted); margin: 0; }
+.tb-day { color: var(--muted); letter-spacing: .12em; font-size: .85em; }
+.tb-clock { font-size: 1.15em; font-weight: 500; }
+.tb-live { width: 7px; height: 7px; border-radius: 50%; background: var(--idle); }
+body[data-live="off"] .tb-live { background: var(--blocked); }
+
+/* Hide inject names: titles and category icons disappear, IDs and times stay. */
+body.hide-names .inj-title, body.hide-names .inj-icon { visibility: hidden; }
+.tb-edit { color: var(--dim); text-decoration: none; font-size: .85em; border: 1px solid var(--line); border-radius: 3px; padding: .2em .7em; }
+.tb-edit:hover { color: var(--text); border-color: var(--muted); }
+body.hide-names .tb-edit { display: none; }

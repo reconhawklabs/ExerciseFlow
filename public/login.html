@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="data:,">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in · Exercise Flow</title>
+  <link rel="stylesheet" href="/css/base.css">
+</head>
+<body class="login-page">
+  <form class="login" method="post" action="/login">
+    <p class="login-brand" id="brand"></p>
+    <h1>Exercise Flow</h1>
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" autocomplete="current-password" autofocus required>
+    <p class="login-error" id="error" hidden></p>
+    <button type="submit">Enter</button>
+  </form>
+  <script src="/js/login.js"></script>
+</body>
+</html>

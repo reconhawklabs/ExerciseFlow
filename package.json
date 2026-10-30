@@ -1,0 +1,19 @@
+{
+  "name": "exercise-flow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Live inject progress board for multi-day exercises. No database, one shared password, runs anywhere Node runs.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js",
+    "build:exe": "node scripts/build-exe.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "postject": "^1.0.0-alpha.6"
+  }
+}

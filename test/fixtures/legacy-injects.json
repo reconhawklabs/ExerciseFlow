@@ -1,0 +1,21 @@
+{
+  "days": [
+    { "day": 1, "theme": "Alpha phase" },
+    { "day": 2, "theme": "Bravo phase" },
+    { "day": 3, "theme": "Charlie phase" }
+  ],
+  "injects": [
+    { "id": "01.01", "day": 1, "time": "0800", "title": "Opening brief", "category": "WHITE" },
+    { "id": "01.02", "day": 1, "time": "0830", "title": "First tasking", "category": "WHITE" },
+    { "id": "01.02a", "day": 1, "time": "0830", "title": "Automated probe", "category": "AI_RED" },
+    { "id": "01.03", "day": 1, "time": "0930", "title": "Threat bulletin", "category": "INTEL" },
+    { "id": "01.04", "day": 1, "time": "1030", "title": "Visitor at the door", "category": "INPERSON_RED" },
+    { "id": "02.01", "day": 2, "time": "0800", "title": "Morning brief", "category": "WHITE" },
+    { "id": "02.02", "day": 2, "time": "0900", "title": "Contract question", "category": "LEGAL" },
+    { "id": "02.03", "day": 2, "time": "1000", "title": "Service disruption", "category": "AI_RED" },
+    { "id": "02.04", "day": 2, "time": "1100", "title": "Lost badge", "category": "INPERSON_RED" },
+    { "id": "03.01", "day": 3, "time": "0800", "title": "Final brief", "category": "WHITE" },
+    { "id": "03.02", "day": 3, "time": "1000", "title": "Records request", "category": "LEGAL" },
+    { "id": "03.03", "day": 3, "time": "1200", "title": "Unattended laptop", "category": "INPERSON_RED" }
+  ]
+}

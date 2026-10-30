@@ -1,0 +1,8 @@
+node_modules/
+build/
+.env
+# Everything the app writes at runtime; only the shipped sample stays in git.
+data/*
+!data/sample-injects.json
+.superpowers/
+.playwright-mcp/

@@ -1,0 +1,20 @@
+{
+  "days": [
+    { "day": 1, "theme": "Detection & Triage" },
+    { "day": 2, "theme": "Containment & Recovery" }
+  ],
+  "injects": [
+    { "id": "01.01", "day": 1, "time": "0800", "title": "Exercise kickoff brief", "category": "WHITE", "icon": "flag" },
+    { "id": "01.02", "day": 1, "time": "0830", "title": "Suspicious login alerts", "category": "RED", "icon": "bug" },
+    { "id": "01.03", "day": 1, "time": "0930", "title": "Leadership requests a situation report", "category": "GOLD", "icon": "document" },
+    { "id": "01.04", "day": 1, "time": "1030", "title": "Phishing campaign observed", "category": "RED", "icon": "mail" },
+    { "id": "01.05", "day": 1, "time": "1300", "title": "Intel bulletin: known adversary tooling", "category": "INTEL", "icon": "eye" },
+    { "id": "01.06", "day": 1, "time": "1500", "title": "Media inquiry", "category": "OTHER", "icon": "phone" },
+    { "id": "02.01", "day": 2, "time": "0800", "title": "Day 2 situation brief", "category": "WHITE", "icon": "flag" },
+    { "id": "02.02", "day": 2, "time": "0900", "title": "Ransom note found on file server", "category": "RED", "icon": "lock" },
+    { "id": "02.03", "day": 2, "time": "1000", "title": "Legal: notification obligations", "category": "LEGAL", "icon": "scales" },
+    { "id": "02.04", "day": 2, "time": "1130", "title": "Communications outage", "category": "EXCON", "icon": "radio" },
+    { "id": "02.05", "day": 2, "time": "1400", "title": "Recovery plan requested", "category": "GOLD", "icon": "document" },
+    { "id": "02.06", "day": 2, "time": "1600", "title": "Hotwash", "category": "WHITE", "icon": "flag" }
+  ]
+}
